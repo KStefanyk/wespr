@@ -1,3 +1,5 @@
+# Water Sotrage and Delay (WS)
+
 ws_fun <- function(site) {
 
   indicator_data <- get_indicator_data(site, "ws", "fun")
