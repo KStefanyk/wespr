@@ -1,9 +1,9 @@
 ---
-title: "Prepare input data for WESPR calculations"
+title: "Prepare input data for wespr calculations"
 #output: word_document
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Prepare input data for Wespr calculations}
+  %\VignetteIndexEntry{Prepare input data for wespr calculations}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,11 +16,11 @@ knitr::opts_chunk$set(
 ```
 
 
-## 1) Prepare Raw data imports 
+## 1) Prepare input data for wespr calculations
 
-The first step in calculating wespr scores for a wetland is to standardise and quality check the input data compiled by the user.  
+The first step in calculating scores and ratings for a wetland is to standardise and quality check the input data compiled by the user.  
 
-As of November 2025, data collection is comprised of two parts:
+As of April 2026, data collection is comprised of two parts:
 
 - Field data collected using a survey123 form (WESP_FIELDV1.csv)
 - Desktop data collected using a survey123 form (WESP_DESKTOPV1.csv)
@@ -75,7 +75,7 @@ The user needs to define the following parameters:
 
 - desktop_data = the full filepath defining the location of the desktop analysis data. Note this needs to be in R readable format and is expecting a .csv file. Example" WESP_DESKTOPV1.csv"
 
-- write_subfiles = TRUE or FALSE. This parameter determines if you want to produce individual files for each of the data components(field, desktop and stressor data components). This allows for an intermediate manual review process. The default values is FALSE. 
+- write_subfiles = TRUE or FALSE. This parameter determines if you want to produce individual files for each of the data components(field, desktop and stressor data components). This allows for an intermediate manual review process. The default value is FALSE. 
 
 - out_dir = a filepath to the location in which your subfiles will be saved. This expects an R readable format and will only be used if write_subfiles = TRUE. 
 
