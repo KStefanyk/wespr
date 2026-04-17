@@ -426,4 +426,4 @@ site   indicator value service_type calibrated_score
 
 ```
 
-Now you have a data table with all indicators, service_type (function or benefit), raw scores and calibrated score (L/M/H). This can be saved or exported as a .csv to be further explored. 
+Now you have a data table with all indicators, service_type (function or benefit), raw scores and the normalized scores and ratings (L= lower, M = moderate, H = hgiher) generated from the calibrated dataset of the selected Ecoprovince ((refered to as the calibration_score in the heading). This can be saved or exported as a .csv to be further explored. 
